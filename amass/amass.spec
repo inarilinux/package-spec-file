@@ -6,7 +6,7 @@ Group:          Security/osint-analysis
 License:        ASL 2.0
 URL:            https://github.com/owasp-amass/amass
 Source0:        https://github.com/owasp-amass/amass/archive/refs/tags/v4.2.0.tar.gz
-BuildRequires:  golang >= 1.16
+BuildRequires:  git golang >= 1.16
 
 %description
 The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.
