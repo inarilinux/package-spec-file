@@ -20,6 +20,7 @@ Built on top of libnet and libpcap, it can passively detect online hosts, or sea
 if [ ! -f configure ]
 then
     ./autogen.sh
+    ./configure
 fi
 
 %configure
