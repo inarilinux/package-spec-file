@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %doc ChangeLog AUTHORS NEWS TODO README.md
-%license COPYING
+%license %{_defaultdocdir}/%{name}/COPYING
 %{_sbindir}/netdiscover
 %dir %{_mandir}
 %{_mandir}/*
