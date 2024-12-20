@@ -4,16 +4,13 @@ Release:        1.inari1
 
 Summary:        Meta-package for dns analysis tools
 License:        GPLv3
+Requires:       fierce dnsrecon
 
 %description
 This meta-package install all collection on dns analysis tools.
 
-%package -n meta-dns-analysis
-Summary: Collection of dns analysis tools
-Requires: fierce dnsrecon
-
-%description -n meta-dns-analysis
-Package of multiple dns analysis tools.
+%prep
+dnf copr enable https://copr.fedorainfracloud.org/coprs/inari-linux/inari-1-kogitsune
 
 %files
 
