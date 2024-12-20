@@ -1,8 +1,8 @@
 Name:           fierce
 Version:        1.6.0
 Release:        1.inari1
+
 Summary:        A DNS reconnaissance tool for locating non-contigous IP space
-Group:          Security/information-gathering
 License:        GPLv3
 URL:            https://github.com/mschwager/fierce.git
 Source0:        https://github.com/mschwager/fierce/archive/refs/tags/1.6.0.tar.gz
@@ -38,5 +38,8 @@ find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|/usr/b
 %doc README.md
 
 %changelog
+* Fri Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 1.6.0-2.inari1
+- Removing all tools group. Replace by meta-package
+
 * Tue Dec 19 2024 Ghost <0x7ccghost@gmail.com> - 1.6.0-1.inari1
 - Initial release fierce for inari-linux 1 "kogitsune"

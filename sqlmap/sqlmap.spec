@@ -1,8 +1,8 @@
 Name:           sqlmap
 Version:        1.8
 Release:        1.inari1
+
 Summary:        Automatic SQL injection and database takeover tool
-Group:          Security/database
 License:        GPLv3
 URL:            https://sqlmap.org/
 Source0:        https://github.com/sqlmapproject/sqlmap/archive/refs/tags/1.8.tar.gz
@@ -49,5 +49,8 @@ ln -s ../../..%{_sysconfdir}/sqlmap.conf .
 %config(noreplace) %{_sysconfdir}/%{name}.conf
 
 %changelog
+* Fri Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 1.8-2.inari1
+- Removing all tools group. Replace by meta-package
+
 * Tue Dec 18 2024 Ghost <0x7ccghost@gmail.com> - 1.8-1.inari1
 - Initial release sqlmap for inari-linux 1 "kogitsune"

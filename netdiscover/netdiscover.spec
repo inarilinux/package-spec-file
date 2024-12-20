@@ -1,8 +1,8 @@
 Name:           netdiscover
 Version:        0.10
 Release:        1.inari1
+
 Summary:        A network address discovering/monitoring tool
-Group:          Security/information-gathering
 License:        GPLv3
 URL:            https://netdiscover-scanner/netdiscover.git
 Source0:        https://github.com/netdiscover-scanner/netdiscover/archive/refs/tags/0.10.tar.gz
@@ -42,5 +42,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/*
 
 %changelog
+* Fri Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 0.10.2-inari1
+- Removing all tools group. Replace by meta-package
+
 * Fri Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 0.10.1-inari1
 - Initial release netdiscover for inari-linux 1 "kogitsune"

@@ -1,8 +1,8 @@
 Name:           dnsrecon
 Version:        1.3.1
-Release:        1.inari1
+Release:        2.inari1
+
 Summary:        DNS reconnaissance tool used for performing various DNS enumeration techniques and test, assisting in the directory of potential vulnerabilies in domain configuration
-Group:          Security/information-gathering
 License:        GPLv2
 URL:            https://github.com/darkoperator/dnsrecon.git
 Source0:        https://github.com/darkoperator/dnsrecon/archive/refs/tags/1.3.1.tar.gz
@@ -51,5 +51,8 @@ find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|/usr/b
 %license LICENSE
 
 %changelog
+* Fri Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 1.3.1-2.inari1
+- Removing all tools group. Replace by meta-package
+
 * Fri Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 1.3.1-1.inari1
 - Initial package dnsrecon 1.3.1 for Inari Linux
