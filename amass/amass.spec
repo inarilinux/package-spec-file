@@ -12,7 +12,7 @@ BuildRequires:  git golang >= 1.19
 The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.
 
 %prep
-%setup -q -n %{name}-%{version}
+%autosetup -n %{name}-%{version}
 
 %build
 go build -o bin/%{name} ./cmd/%{name}
@@ -23,7 +23,7 @@ install -m 0755 bin/%{name} %{buildroot}%{_bindir}/%{name}
 
 %files
 %license LICENSE
-%doc README.md
+%doc doc/*
 %{_bindir}/%{name}
 
 %changelog
