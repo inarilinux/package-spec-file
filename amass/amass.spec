@@ -29,4 +29,4 @@ install -m 0755 bin/%{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Fri Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 4.2.0-1.inari1
-- Initial release amas for inari-linux 1 "kogitsune"
+- Initial release amass for inari-linux 1 "kogitsune"
