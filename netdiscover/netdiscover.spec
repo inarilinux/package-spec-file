@@ -6,12 +6,7 @@ Group:          Security/information-gathering
 License:        GPLv3
 URL:            https://netdiscover-scanner/netdiscover.git
 Source0:        https://github.com/netdiscover-scanner/netdiscover/archive/refs/tags/0.10.tar.gz
-BuildRequires:  libpcap-devel
-BuildRequires:  autoconf
-BuildRequires:  automake
-BuildRequires:  dos2unix
-BuildRequires:  hwdata
-BuildRequires:  libnet-devel >= 1.1.2
+BuildRequires:  libpcap-devel autoconf automake dos2unix hwdata libnet-devel >= 1.1.2
 
 %description
 Nerdiscover is an active/passive address reconnaissance tool, mainly developed for those wireless networks without dhcp server, when you are wardriving. It can be also used on hub/switched networks.
@@ -39,11 +34,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc ChangeLog AUTHORS NEWS TODO COPYING README.md
+%doc ChangeLog AUTHORS NEWS TODO README.md
+%license COPYING
 %{_sbindir}/netdiscover
 %dir %{_mandir}
 %{_mandir}/*
 
 %changelog
-* Wed Nov 13 2024 Ghost <0x7ccghost@gmail.com> - 0.10.1-inari1
-- Use netdiscover 0.10 from tag release
+* Wed Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 0.10.1-inari1
+- Initial release netdiscover for inari-linux 1 "kogitsune"

@@ -49,5 +49,5 @@ ln -s ../../..%{_sysconfdir}/sqlmap.conf .
 %config(noreplace) %{_sysconfdir}/%{name}.conf
 
 %changelog
-* Tue Dec 18 2024 Ghost <0x7ccghost@gmail.com> - 1.8.1-inari1
+* Tue Dec 18 2024 Ghost <0x7ccghost@gmail.com> - 1.8-1.inari1
 - Initial release sqlmap for inari-linux 1 "kogitsune"

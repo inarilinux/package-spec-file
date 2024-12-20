@@ -38,5 +38,5 @@ find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|/usr/b
 %doc README.md
 
 %changelog
-* Tue Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 1.6.0-1inari1
+* Tue Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 1.6.0-1.inari1
 - Initial release fierce for inari-linux 1 "kogitsune"

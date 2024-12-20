@@ -57,5 +57,5 @@ find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|/usr/b
 %doc README.md License
 
 %changelog
-* Tue Nov 12 2024 Ghost <0x7ccghost@gmail.com> - 1.3.1.1-inari1
+* Tue Nov 12 2024 Ghost <0x7ccghost@gmail.com> - 1.3.1-1.inari1
 - Initial package dnsrecon 1.3.1 for Inari Linux

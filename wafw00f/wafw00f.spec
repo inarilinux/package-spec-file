@@ -32,5 +32,5 @@ sed -i -e '/^#!\//, 1d' {wafw00f/*.py,wafw00f/*/*.py}
 %{python3_sitelib}/%{name}/
 
 %changelog
-* Wed Nov 13 2024 Ghost <0x7ccghost@gmail.com> - 2.2.0.1-inari1
+* Wed Nov 13 2024 Ghost <0x7ccghost@gmail.com> - 2.2.0-1.inari1
 - Initial package wafw00f 2.2.0 for Inari Linux
