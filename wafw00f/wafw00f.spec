@@ -8,8 +8,7 @@ URL:            https://github.com/EnableSecurity/wafw00f.git
 Source0:        https://github.com/EnableSecurity/wafw00f/archive/refs/tags/v2.2.0.tar.gz
 BuildArch:      noarch
 
-BuildRequires:  python3-devel
-BuildRequires:  python3-setuptools
+BuildRequires:  python3-devel python3-setuptools
 
 %description
 WAFW00F identifies and fingerprints Web Application Firewall (WAF) products.
@@ -25,12 +24,12 @@ sed -i -e '/^#!\//, 1d' {wafw00f/*.py,wafw00f/*/*.py}
 %py3_install
 
 %files
-%doc CREDITS.txt README.md
+%doc CREDITS.txt README.md Code_OF_CONDUCT.md
 %license LICENSE
 %{_bindir}/%{name}
 %{python3_sitelib}/%{name}-*.egg-info/
 %{python3_sitelib}/%{name}/
 
 %changelog
-* Wed Nov 13 2024 Ghost <0x7ccghost@gmail.com> - 2.2.0-1.inari1
+* Thu Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 2.2.0-1.inari1
 - Initial package wafw00f 2.2.0 for Inari Linux
