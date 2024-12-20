@@ -7,15 +7,7 @@ License:        GPLv2
 URL:            https://github.com/darkoperator/dnsrecon.git
 Source0:        https://github.com/darkoperator/dnsrecon/archive/refs/tags/1.3.1.tar.gz
 BuildArch:      noarch
-Requires:       python3
-Requires:       python3-requests
-Requires:	    python3-dns
-Requires:	    python3-netaddr
-Requires:	    python3-loguru
-Requires:	    python3-lxml
-Requires:       python3-urllib3
-Requires:       python3-charset-normalizer
-Requires:       python3-certifi
+Requires:       python3 python3-requests python3-dns python3-netaddr python3-loguru python3-lxml python3-urllib3 python3-charset-normalizer python3-certifi
 
 
 %description
@@ -36,12 +28,13 @@ cd %{_datadir}/%{name}
 EOF
 chmod 0755 %{buildroot}%{_bindir}/%{name}
 
-install -d -m 775 %{buildroot}%{_datadir}/%{name}
-install -m 755 dnsrecon.py %{buildroot}%{_datadir}/%{name}
+install -d -m 0775 %{buildroot}%{_datadir}/%{name}
+install -m 0755 dnsrecon.py %{buildroot}%{_datadir}/%{name}
 cp -pr dnsrecon %{buildroot}%{_datadir}/%{name}
 cp -pr tools %{buildroot}%{_datadir}/%{name}
+cp -pr tests %{buildroot}%{_datadir}/%{name}
 
-install -d -m 755 %{buildroot}%{_bindir}
+install -d -m 0755 %{buildroot}%{_bindir}
 cat > %{buildroot}%{_bindir}/dnsrecon << 'EOF'
 #!/usr/bin/bash
 cd %{_datadir}/%{name}
@@ -54,8 +47,9 @@ find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|/usr/b
 %files
 %{_datadir}/%{name}
 %{_bindir}/%{name}
-%doc README.md License
+%doc README.md
+%license LICENSE
 
 %changelog
-* Tue Nov 12 2024 Ghost <0x7ccghost@gmail.com> - 1.3.1-1.inari1
+* Fri Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 1.3.1-1.inari1
 - Initial package dnsrecon 1.3.1 for Inari Linux
