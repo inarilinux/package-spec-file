@@ -6,7 +6,6 @@ Group:          Security/osint-analysis
 License:        ASL 2.0
 URL:            https://github.com/owasp-amass/amass
 Source0:        https://github.com/owasp-amass/amass/archive/refs/tags/v4.2.0.tar.gz
-BuildArch:      x86_64
 BuildRequires:  golang >= 1.16
 
 %description
