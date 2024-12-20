@@ -24,12 +24,12 @@ sed -i -e '/^#!\//, 1d' {wafw00f/*.py,wafw00f/*/*.py}
 %py3_install
 
 %files
-%doc CREDITS.txt README.md Code_OF_CONDUCT.md
+%doc CREDITS.txt README.md CODE_OF_CONDUCT.md
 %license LICENSE
 %{_bindir}/%{name}
 %{python3_sitelib}/%{name}-*.egg-info/
 %{python3_sitelib}/%{name}/
 
 %changelog
-* Thu Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 2.2.0-1.inari1
+* Fri Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 2.2.0-1.inari1
 - Initial package wafw00f 2.2.0 for Inari Linux
