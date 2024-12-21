@@ -4,6 +4,7 @@ Release:        1.inari1
 
 Summary:        Meta-package for dns analysis tools
 License:        GPLv3
+BuildRequires:  dnf
 Requires:       fierce dnsrecon
 
 %description
