@@ -7,6 +7,10 @@ License:        ASL 2.0
 URL:            https://github.com/owasp-amass/amass
 Source0:        https://github.com/owasp-amass/amass/releases/download/v4.2.0/amass_Linux_amd64.zip
 BuildRequires:  unzip
+Requires:       glibc
+
+%global _build_id_links none
+%global debug_package %{nil}
 
 %description
 The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.
@@ -17,11 +21,11 @@ unzip %{_sourcedir}/amass_Linux_amd64.zip
 
 %install
 install -d -m 0755 %{buildroot}%{_bindir}/%{name}
-install -m 0755 %{name} %{buildroot}%{_bindir}/%{name}
+install -m 0755 amass_Linux_amd64/%{name} %{buildroot}%{_bindir}/%{name}
 
 %files
-%license LICENSE
-%doc README.md
+%license amass_Linux_amd64/LICENSE
+%doc amass_Linux_amd64/README.md
 %{_bindir}/%{name}
 
 %changelog
