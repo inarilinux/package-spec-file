@@ -13,7 +13,7 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 
 %prep
 %autosetup -c -T
-unzip amass_Linux_amd64.zip
+unzip amass_Linux_amd64
 
 %install
 install -d -m 0755 %{buildroot}%{_bindir}/%{name}
