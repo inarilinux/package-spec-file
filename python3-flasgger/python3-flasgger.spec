@@ -9,7 +9,7 @@ Summary:        Extract swagger specs from your flask project
 
 License:        MIT
 URL:            https://github.com/flasgger/flasgger/
-Source0:        %{pypi_source}
+Source0:        https://github.com/flasgger/flasgger/archive/refs/tags/v0.9.7.1.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
@@ -65,4 +65,4 @@ rm -rf %{pypi_name}.egg-info
 
 %changelog
 * Sat Dec 21 2024 codeoftheghost <0x7ccghost@gmail.com> - 0.9.7.1-1
-- Initial release python3-flasgger for inari-linux 1 "kogitsune.
+- Initial release python3-flasgger for inari-linux 1 "kogitsune".
