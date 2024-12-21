@@ -11,7 +11,7 @@ Requires:       fierce dnsrecon
 This meta-package install all collection on dns analysis tools.
 
 %prep
-dnf copr enable https://copr.fedorainfracloud.org/coprs/inari-linux/inari-1-kogitsune
+dnf copr enable inari-linux/inari-1-kogitsune
 
 %files
 
