@@ -13,7 +13,7 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 
 %prep
 %autosetup -c -T
-unzip %{Source0}
+unzip %{source0}
 
 %install
 install -d -m 0755 %{buildroot}%{_bindir}/%{name}
