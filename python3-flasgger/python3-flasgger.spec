@@ -24,7 +24,7 @@ Flasgger is a Flask extension to extract OpenAPI-Specification from all Flask vi
 
 %install
 %pyproject_install
-%pyproject_save_files %{name}
+%pyproject_save_files flasgger
 
 %files -n %{name} -f %{pyproject_files}
 %doc README.md HISTORY
