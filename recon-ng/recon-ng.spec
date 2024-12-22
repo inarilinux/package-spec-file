@@ -23,7 +23,7 @@ install -m 0755 recon-web %{buildroot}%{_datadir}/%{name}
 install -m 0755 VERSION %{buildroot}%{_datadir}/%{name}
 cp -pr recon %{buildroot}%{_datadir}/%{name}
 
-install -d -m 0755 %{buildroot}%{_bindir}/%{name}
+install -d -m 0755 %{buildroot}%{_bindir}
 cat > %{buildroot}%{_bindir}/recon-ng << 'EOF'
 #!/usr/bin/bash
 cd %{_datadir}/%{name}
