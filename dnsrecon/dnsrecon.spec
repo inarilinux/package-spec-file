@@ -17,13 +17,13 @@ dnsrecon is a python-based tool for DNS reconnaissance and security assessments.
 %prep
 %setup -q -n %{name}-%{version}
 
-# fix shebang on source file
-find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|/usr/bin/env python$|/usr/bin/python3|' {} +
-
 %install
 mkdir -p %{buildroot}%{_datadir}/%{name}
 mkdir -p %{buildroot}%{_datadir}/doc/%{name}
 mkdir -p %{buildroot}%{_bindir}
+
+# fix shebang on source file
+find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|/usr/bin/env python$|/usr/bin/python3|' {} +
 
 # create virtual env with pipx
 pipx install --force ./ --pip-args "--no-cache-dir --disable-pip-version-check"
