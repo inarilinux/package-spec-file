@@ -7,7 +7,7 @@ License:        GPLv3
 URL:            https://github.com/lanmaster53/recon-ng
 Source0:        https://github.com/lanmaster53/recon-ng/archive/refs/tags/v5.1.2.tar.gz
 BuildArch:      noarch
-Requires:       python3-pyyaml python3-dns python3-lxml python3-mechanize python3-requests python3-flask-restx python3-flasgger python3-dicttoxml python3-xlxswriter python3-rq
+Requires:       python3-pyyaml python3-dns python3-lxml python3-mechanize python3-requests python3-flask-restx python3-flasgger python3-dicttoxml python3-xlsxwriter python3-rq
 
 %description
 Recon-ng is a full-featured reconnaissance framework designed with the goal of providing a powerful environment to conduct open source web-based reconnaissance quickly and thoroughly. Recon-ng has a look and feel similar to the Metasploit Framework, reducing the learning curve for leveraging the framework. However, it is quite different. Recon-ng is not intended to compete with existing frameworks, as it is designed exclusively for web-based open source reconnaissance. If you want to exploit, use the Metasploit Framework. If you want to social engineer, use the Social-Engineer Toolkit. If you want to conduct reconnaissance, use Recon-ng!
