@@ -17,10 +17,10 @@ Recon-ng is a full-featured reconnaissance framework designed with the goal of p
 
 %install
 install -d -m 0755 %{buildroot}%{_datadir}/%{name}
-install -m recon-cli %{buildroot}%{_datadir}/%{name}
-install -m recon-ng %{buildroot}%{_datadir}/%{name}
-install -m recon-web %{buildroot}%{_datadir}/%{name}
-install -m VERSION %{buildroot}%{_datadir}/%{name}
+install -m 0755 recon-cli %{buildroot}%{_datadir}/%{name}
+install -m 0755 recon-ng %{buildroot}%{_datadir}/%{name}
+install -m 0755 recon-web %{buildroot}%{_datadir}/%{name}
+install -m 0755 VERSION %{buildroot}%{_datadir}/%{name}
 cp -pr recon %{buildroot}%{_datadir}/%{name}
 
 install -d -m 0755 %{buildroot}%{_bindir}/%{name}
