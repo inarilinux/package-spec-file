@@ -17,9 +17,9 @@ dnsrecon is a python-based tool for DNS reconnaissance and security assessments.
 %setup -q -n %{name}-%{version}
 
 %install
-mkdir -p %{buildroot}/%{_datadir}/%{name}
-mkdir -p %{buildroot}/%{_datadir}/doc/%{name}
-mkdir -p %{buildroot}/%{_bindir}
+mkdir -p %{buildroot}%{_datadir}/%{name}
+mkdir -p %{buildroot}%{_datadir}/doc/%{name}
+mkdir -p %{buildroot}%{_bindir}
 
 cat > %{buildroot}%{_bindir}/dnsrecon << 'EOF'
 #!/usr/bin/bash
