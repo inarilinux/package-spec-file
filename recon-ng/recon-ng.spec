@@ -24,6 +24,7 @@ install -m 0755 VERSION %{buildroot}%{_datadir}/%{name}
 cp -pr recon %{buildroot}%{_datadir}/%{name}
 
 install -d -m 0755 %{buildroot}%{_bindir}
+
 cat > %{buildroot}%{_bindir}/recon-ng << 'EOF'
 #!/usr/bin/bash
 cd %{_datadir}/%{name}
@@ -42,15 +43,15 @@ cd %{_datadir}/%{name}
 ./recon-web "$@"
 EOF
 
-chmod 0755 %{buildroot}%{_bindir}/%{name}
-
-find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|/usr/bin/env python$|/usr/bin/python3|' {} +
+find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|^#!/usr/bin/env python$|#!/usr/bin/python3|' {} +
 
 %files
 %license LICENSE
 %doc README.md
 %{_datadir}/%{name}
-%{_bindir}/%{name}
+%{_bindir}/recon-ng
+%{_bindir}/recon-cli
+%{_bindir}/recon-web
 
 %changelog
 * Sun Dec 22 2024 Ghost <0x7ccghost@gmail.com> - 5.1.2-1.inari1
