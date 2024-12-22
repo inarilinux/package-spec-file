@@ -52,5 +52,4 @@ ln -s ../../..%{_sysconfdir}/sqlmap.conf .
 * Fri Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 1.8-2.inari1
 - Removing all tools group. Replace by meta-package
 
-* Tue Dec 18 2024 Ghost <0x7ccghost@gmail.com> - 1.8-1.inari1
-- Initial release sqlmap for inari-linux 1 "kogitsune"
+s
