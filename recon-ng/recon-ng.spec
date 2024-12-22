@@ -49,8 +49,8 @@ find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|/usr/b
 %files
 %license LICENSE
 %doc README.md
-%{_datadir}
-%{_bindir}
+%{_datadir}/%{name}
+%{_bindir}/%{name}
 
 %changelog
 * Sun Dec 22 2024 Ghost <0x7ccghost@gmail.com> - 5.1.2-1.inari1
