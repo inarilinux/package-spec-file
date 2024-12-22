@@ -36,7 +36,7 @@ cd %{_datadir}/%{name}
 ./recon-cli "$@"
 EOF
 
-cat > %{buildroot}%{_bindir}/recon-cli << 'EOF'
+cat > %{buildroot}%{_bindir}/recon-web << 'EOF'
 #!/usr/bin/bash
 cd %{_datadir}/%{name}
 ./recon-web "$@"
@@ -49,8 +49,8 @@ find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|/usr/b
 %files
 %license LICENSE
 %doc README.md
-%{_datadir}/%{name}
-%{_bindir}/%{name}
+%{_datadir}
+%{_bindir}
 
 %changelog
 * Sun Dec 22 2024 Ghost <0x7ccghost@gmail.com> - 5.1.2-1.inari1
