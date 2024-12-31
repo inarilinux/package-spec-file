@@ -1,17 +1,17 @@
-Name:           dnsrecon
-Version:        1.3.1
-Release:        2.inari1
+Name:           dnsenum
+Version:        1.3.2
+Release:        1.inari1
 
-Summary:        DNS reconnaissance tool used for performing various DNS enumeration techniques and test, assisting in the directory of potential vulnerabilies in domain configuration
-License:        GPLv2
-URL:            https://github.com/darkoperator/dnsrecon.git
-Source0:        https://github.com/darkoperator/dnsrecon/archive/refs/tags/1.3.1.tar.gz
+Summary:        dnsenum is a perl script that enumerates DNS information 
+License:        GPLv3
+URL:            https://github.com/fwaeytens/dnsenum
+Source0:        https://github.com/SparrowOchon/dnsenum2/archive/refs/tags/v1.3.2.tar.gz
 BuildArch:      noarch
-Requires:       python3 python3-requests python3-dns python3-netaddr python3-loguru python3-lxml python3-urllib3 python3-charset-normalizer python3-certifi
+Requires:       perl perl-String-Random perl-Net-IP perl-Net-DNS perl-Net-Netmask perl-XML-writer
 
 
 %description
-dnsrecon is a python-based tool for DNS reconnaissance and security assessments. It automates the collection of DNS records, zone transfers, subdomain enumeration, and cache snooping. Supporting various DNS test, dnsrecon helps reveal configuration vulnerabilities, and facilitates integration with other security tools through flexible output formats.
+multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks.
 
 %prep
 %setup -q -n %{name}-%{version}
