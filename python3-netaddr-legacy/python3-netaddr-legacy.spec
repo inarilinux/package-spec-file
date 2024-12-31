@@ -27,6 +27,7 @@ A Python library for representing and manipulating network addresses.
 %pyproject_save_files netaddr
 
 %files -n %{name} -f %{pyproject_files}
+%{_bindir}/netaddr
 %doc README.rst CHANGELOG AUTHORS THANKS
 %license LICENSE COPYRIGHT
 

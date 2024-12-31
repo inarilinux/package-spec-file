@@ -7,7 +7,7 @@ License:        GPLv2
 URL:            https://github.com/darkoperator/dnsrecon.git
 Source0:        https://github.com/darkoperator/dnsrecon/archive/refs/tags/1.3.1.tar.gz
 BuildArch:      noarch
-Requires:       python3 python3-requests python3-dns python3-netaddr python3-loguru python3-lxml python3-urllib3 python3-charset-normalizer python3-certifi
+Requires:       python3 python3-requests python3-dns python3-netaddr-legacy python3-loguru python3-lxml python3-urllib3 python3-charset-normalizer python3-certifi
 
 
 %description
