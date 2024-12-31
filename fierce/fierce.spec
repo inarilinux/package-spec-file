@@ -1,11 +1,12 @@
 Name:           fierce
 Version:        1.6.0
-Release:        1.inari1
+Release:        3.inari1
 
 Summary:        A DNS reconnaissance tool for locating non-contigous IP space
 License:        GPLv3
 URL:            https://github.com/mschwager/fierce.git
-Source0:        https://github.com/mschwager/fierce/archive/refs/tags/1.6.0.tar.gz
+#Source0:        https://github.com/mschwager/fierce/archive/refs/tags/1.6.0.tar.gz
+Source0:         https://github.com/agungichiruki/fierce/archive/refs/tags/1.6.0.tar.gz
 BuildArch:      noarch
 Requires:       python3-requests python3-dns
 
@@ -38,6 +39,9 @@ find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|/usr/b
 %doc README.md
 
 %changelog
+* Tue Dec 31 2024 Ghost <0x7ccghost@gmail.com> - 1.6.0-3.inari1
+- Change source to fix deprecated resolver.query()
+
 * Fri Dec 20 2024 Ghost <0x7ccghost@gmail.com> - 1.6.0-2.inari1
 - Removing all tools group. Replace by meta-package
 
