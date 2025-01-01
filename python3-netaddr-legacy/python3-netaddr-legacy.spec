@@ -33,4 +33,4 @@ A Python library for representing and manipulating network addresses.
 
 %changelog
 * Tue Dec 31 2024 codeoftheghost <0x7ccghost@gmail.com> - 0.10.1-1inari1
-- Initial release python3-flasgger for inari-linux 1 "kogitsune".
+- Initial release python3-netaddr-legacy for inari-linux 1 "kogitsune".
